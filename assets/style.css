@@ -1,37 +1,52 @@
-
-
+:root  {
+    --blue: #271db6;
+    --green: #235f06;
+    --brown: #b95a46;
+    --light: #78cf30;
+    --dark: #1c310b;
+  }
+  
+*
+{background-color: #271db6;}
     body {
-      background-color: brown;
+      background-color: (var(--green));
     }
 
-    h1 {
-      color: white;
-      text-decoration: underline;
+    #nav
+    a:link    { color: blue; }
+    a:visited { color: purple; }
+    a:hover   { color: red; }
+    a:focus   { outline: 1px solid blue; }
+    a:active  { color: yellow ;}
+    }
+    
+.body {
+  grid-template: max-content;
+}
+
+h1 {background-color: #78cf30;
+      color: (var(--dark));
+      text-decoration: underline;;
+      font-size: larger;
+      font-style: italic;
     }
 
-    h2, h3, p {
-      color: yellow;
+.h2{color: #235f06;
+}
+
+h3, p {
+      color: (var(--light));
     }
 
     p, li {
+      background-color: var(--brown);
+      color: var(--green);
       font-size: 24px;
       font-family: cursive;
+    
+    
     }
 
-    .almond {
-      color: white;
-    }
+  
 
-    .butterfinger {
-      color: orange;
-    }
-
-    .ferrero {
-      color: gold;
-    }
-
-    .all {
-      color: blue;
-    }
-
-  </style></head>
+  
