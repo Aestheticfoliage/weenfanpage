@@ -7,9 +7,12 @@
   }
   
 *
-{background-color: #271db6;}
+{background-color: var(--light);
+}
     body {
       background-color: (var(--green));
+      grid-template: max-content;
+
     }
 
     #nav
@@ -20,11 +23,8 @@
     a:active  { color: yellow ;}
     }
     
-.body {
-  grid-template: max-content;
-}
 
-h1 {background-color: #78cf30;
+h1 {background-color: var(--brown);
       color: (var(--dark));
       text-decoration: underline;;
       font-size: larger;
@@ -34,11 +34,11 @@ h1 {background-color: #78cf30;
 .h2{color: #235f06;
 }
 
-h3, p {
+h3 p {
       color: (var(--light));
     }
 
-    p, li {
+    p li {
       background-color: var(--brown);
       color: var(--green);
       font-size: 24px;
@@ -46,6 +46,11 @@ h3, p {
     
     
     }
+footer{
+  justify-content: end;
+  height: 100px;
+  width: 100px;
+}
 
   
 
